@@ -1,0 +1,56 @@
+{
+    "name": "Ultroid UserBot",
+    "description": "Pluggable telegram userbot, made in python using Telethon.",
+    "logo": "https://telegra.ph/file/031957757a4f6a5191040.jpg",
+    "keywords": [
+        "Telethon",
+        "telegram",
+        "userbot",
+        "python",
+        "ultroid"
+    ],
+    "repository": "https://github.com/hackerX9489/Ultroid",
+    "website": "",
+    "success_url": "",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "6371786", 
+            "required": false
+        },
+        "API_HASH": {
+            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": "a2b7f493102870db55c2ca9042bfa48f",
+            "required": false
+        },
+        "SESSION": {
+            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
+            "value": "1BVtsOMcBuxkcHQIaYhbMqK3gW0z9tgy5-UlflX7i8UbI3nHQwBczd3X7OvTfH2a0y8f5Sa0nMpKBip4zmUKFpksL1DCF4WxFHeaSeXDRp4eGMSzYWdAjrXBfwVNu8VeMBrXWPSrjQHRY4tBytEVi4DbleMtrVpfebxOsJQ9vesAlnlqFvu6dRMtNFBRKea2TBa0CyI-JRwXycmFxlcapV_kvoNuDlCm1X_Mf4g3s6wFFVeF9I1YoAH2MGGfpRx30XOCjTVOmR6GomzAoAzUI2pXaJt_AVvtnUk2opj2ymMNpjxdBrCkOi9VKEMXaYwecmhQPHIlA9eha_JQVFjjjRl8riZtYjcQ="
+        },
+        "REDIS_URI": {
+            "description": "Redis endpoint URL, from redislabs.com",
+            "value": "redis-19065.c278.us-east-1-4.ec2.cloud.redislabs.com:19065"
+        },
+        "REDIS_PASSWORD": {
+            "description": "Redis endpoint password, from redislabs.com",
+            "value": "9jnUKYweATWLfmAYkZNUBNsAvEL3bh76"
+        },
+        "HEROKU_API": {
+            "description": "Heroku API token. Needed if deploying on heroku ONLY.",
+            "value": "",
+            "required": false
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Name of your heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
+            "value": "",
+            "required": false
+        }
+    },
+    "formation": {
+        "ultroid": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
